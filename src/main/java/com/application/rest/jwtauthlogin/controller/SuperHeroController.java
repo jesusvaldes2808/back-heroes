@@ -4,15 +4,14 @@ import com.application.rest.jwtauthlogin.dto.request.HeroRequestDto;
 import com.application.rest.jwtauthlogin.dto.response.HeroResponseDto;
 import com.application.rest.jwtauthlogin.services.HeroService;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
+@AllArgsConstructor
 @RequestMapping(value = "/api/v1/superhero")
-@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
+@CrossOrigin(origins = "*")
 public class SuperHeroController {
 
     private HeroService heroService;
