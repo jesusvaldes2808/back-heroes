@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping(value = "/api/v1/superhero")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://172.30.1.230:8090")
 public class SuperHeroController {
 
     private HeroService heroService;
